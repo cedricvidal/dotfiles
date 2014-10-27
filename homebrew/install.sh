@@ -1,5 +1,7 @@
 #!/bin/sh
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 command -v brew >/dev/null 2>&1
 if [ "$?" -ne "0" ]; then
     echo 'Install Homebrew: http://brew.sh/'
@@ -26,7 +28,7 @@ fi
 # Install Missing Homebrew formulas
 #
 brew list > /tmp/installed
-TO_INSTALL=$(comm -13 /tmp/installed formulas)
+TO_INSTALL=$(comm -13 /tmp/installed $DIR/formulas)
 
 if [ ! -z "${TO_INSTALL}" ]; then
 	echo "Missing brew formulas should be installed"
@@ -40,7 +42,7 @@ fi
 # Install Missing Cask formulas
 #
 brew cask list > /tmp/installed
-TO_INSTALL=$(comm -13 /tmp/installed cask-formulas)
+TO_INSTALL=$(comm -13 /tmp/installed $DIR/cask-formulas)
 
 if [ ! -z "${TO_INSTALL}" ]; then
 	echo "Missing brew cask formulas should be installed"
