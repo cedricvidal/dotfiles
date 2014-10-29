@@ -1,0 +1,21 @@
+[user]
+	name = Cédric Vidal
+	email = cedric@vidal.biz
+[core]
+	excludesfile = ~/.gitignore_global
+	ui = true
+	autocrlf = input
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[alias]
+	lg = log --all --graph --decorate --oneline
+	undo = reset --soft HEAD^
+	ci = commit
+	co = checkout
+	st = status
+
+[credential]
