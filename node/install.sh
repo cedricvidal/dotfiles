@@ -14,14 +14,14 @@ find /usr/local/lib/node_modules -type d -depth 1 | sort | while read path; do b
 TO_INSTALL=$(comm -13 /tmp/installed $DIR/modules)
 
 if [ ! -z "${TO_INSTALL}" ]; then
-  echo "Updating node modules before installing new ones"
+  echo "Updating Node.js modules before installing new ones"
   npm update -g
 
   echo $TO_INSTALL | while read module; do
-    echo "Installing node module $module"
+    echo "Installing Node.js module $module"
     npm install -g ${module}
   done
 else
-  echo "All modules are already installed"
+  echo "All Node.js modules are already installed"
 fi
 
