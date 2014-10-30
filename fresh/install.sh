@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
@@ -8,6 +8,15 @@ if [ ! -e ~/.freshrc ]; then
 fi
 
 if [ ! -d ~/.fresh ]; then
+
+	echo -n "Fresh not installed, install it? (Y/n): "
+	read CONFIRM
+	case $CONFIRM in
+	  y|Y) break ;;
+	  n|N) exit ;;
+	  *) ;;
+	esac
+
 	echo "Installing Fresh"
 	bash -c "`curl -sL get.freshshell.com`"
 else
