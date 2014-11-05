@@ -12,19 +12,20 @@ if [ ! -f $BASHIT_DIR/bash_it.sh ]; then
 fi
 
 function install_bashit_piece {
-  piece=$1
-  if [ -f $DIR/$piece ]; then
-    cat $DIR/$piece | while read i; do
-      if [ ! -f $BASHIT_DIR/$piece/enabled/$i.aliases.bash ]; then
+  pieces=$1
+  piece=$2
+  if [ -f $DIR/$pieces ]; then
+    cat $DIR/$pieces | while read i; do
+      if [ ! -f $BASHIT_DIR/$pieces/enabled/$i.$piece.bash ]; then
         echo "Enabling bash-it $piece $i"
-        ln -s $BASHIT_DIR/$piece/available/$i.aliases.bash $BASHIT_DIR/$piece/enabled/$i.aliases.bash;
+        ln -s $BASHIT_DIR/$pieces/available/$i.$piece.bash $BASHIT_DIR/$pieces/enabled/$i.$piece.bash;
       fi
     done
   fi
 }
 
-install_bashit_piece aliases
-install_bashit_piece plugins
-install_bashit_piece completion
+install_bashit_piece aliases aliases
+install_bashit_piece plugins plugin
+install_bashit_piece completion completion
 
 source ~/.bash_profile
