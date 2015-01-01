@@ -15,6 +15,7 @@ function install_bashit_piece {
   pieces=$1
   piece=$2
   if [ -f $DIR/$pieces ]; then
+    mkdir -p $BASHIT_DIR/$pieces/enabled/
     cat $DIR/$pieces | while read i; do
       if [ ! -f $BASHIT_DIR/$pieces/enabled/$i.$piece.bash ]; then
         echo "Enabling bash-it $piece $i"
