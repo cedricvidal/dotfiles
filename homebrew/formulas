@@ -5,7 +5,7 @@ direnv
 docker
 fig
 git-flow
-maven
+maven30
 md5sha1sum
 mobile-shell
 most
