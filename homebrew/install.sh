@@ -25,6 +25,20 @@ if [[ $(brew tap) != *cask* ]]; then
 	brew install caskroom/cask/brew-cask
 fi
 
+# Install Missing Taps
+#
+brew tap > /tmp/installed
+TO_INSTALL=$(comm -13 /tmp/installed $DIR/taps)
+
+if [ ! -z "${TO_INSTALL}" ]; then
+	echo "Missing brew taps should be installed"
+	update
+	echo "Installing brew taps ${TO_INSTALL}"
+	brew tap ${TO_INSTALL}
+else
+	echo "All brew taps are already installed"
+fi
+
 # Install Missing Homebrew formulas
 #
 brew list > /tmp/installed
