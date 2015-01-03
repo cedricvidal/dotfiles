@@ -13,6 +13,7 @@ node
 parallel
 pigz
 pngcrush
+rsync
 ssh-copy-id
 the_silver_searcher
 tree
