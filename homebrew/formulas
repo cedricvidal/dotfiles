@@ -1,22 +1,33 @@
-ack
+# Classic tools
 bash-completion
-boot2docker
-direnv
-docker
-fig
+direnv					# Allows to have project-specific environment variables and not clutter the "~/.profile" file
 git-flow
-maven30
 md5sha1sum
-mobile-shell
-most
-node
-parallel
-pigz
+mobile-shell			# Mosh is a replacement for SSH. It's more robust and responsive, especially over Wi-Fi, cellular, and long-distance links.
+most					# If less is more than more, most is more than less
+parallel				# Shell tool for executing jobs in parallel using one or more computers
+pigz					# Parallel gzip
 pngcrush
-rsync
-ssh-copy-id
-the_silver_searcher
 tree
 watch
-wget
 z
+
+# Java
+maven30					# Maven 3.0.x
+
+# Node.js
+node					# Node.js
+
+# Network
+rsync					# rsync 3.1 replaces OSX old rsync 2.6.9
+ssh-copy-id				# install your public key in a remote machine's authorized_keys
+wget
+
+# Code search
+ack						# a tool like grep, optimized for programmers
+the_silver_searcher		# A code-searching tool similar to ack, but faster
+
+# Virtualization
+boot2docker
+docker
+fig

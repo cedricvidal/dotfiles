@@ -28,7 +28,8 @@ fi
 # Install Missing Taps
 #
 brew tap > /tmp/installed
-TO_INSTALL=$(comm -13 /tmp/installed $DIR/taps)
+cat $DIR/taps | tr -d "\t " | cut -d "#" -f 1 | sort -u > /tmp/toinstall
+TO_INSTALL=$(comm -13 /tmp/installed /tmp/toinstall)
 
 if [ ! -z "${TO_INSTALL}" ]; then
 	echo "Missing brew taps should be installed"
@@ -42,7 +43,8 @@ fi
 # Install Missing Homebrew formulas
 #
 brew list > /tmp/installed
-TO_INSTALL=$(comm -13 /tmp/installed $DIR/formulas)
+cat $DIR/formulas | tr -d "\t " | cut -d "#" -f 1 | sort -u > /tmp/toinstall
+TO_INSTALL=$(comm -13 /tmp/installed /tmp/toinstall)
 
 if [ ! -z "${TO_INSTALL}" ]; then
 	echo "Missing brew formulas should be installed"
@@ -56,7 +58,8 @@ fi
 # Install Missing Cask formulas
 #
 brew cask list > /tmp/installed
-TO_INSTALL=$(comm -13 /tmp/installed $DIR/cask-formulas)
+cat $DIR/cask-formulas | tr -d "\t " | cut -d "#" -f 1 | sort -u > /tmp/toinstall
+TO_INSTALL=$(comm -13 /tmp/installed /tmp/toinstall)
 
 if [ ! -z "${TO_INSTALL}" ]; then
 	echo "Missing brew cask formulas should be installed"
