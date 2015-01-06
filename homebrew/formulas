@@ -15,7 +15,7 @@ git					# Git 2.2.1
 
 # Java
 maven30					# Maven 3.0.x
-homebrew/completions/maven-completion
+maven-completion
 
 # Node.js
 node					# Node.js

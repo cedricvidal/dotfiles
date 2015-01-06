@@ -1,1 +1,2 @@
-homebrew/dupes	# These formulae duplicate software provided by OS X, though may provide more recent or bugfix versions.
+homebrew/dupes		# These formulae duplicate software provided by OS X, though may provide more recent or bugfix versions.
+homebrew/completions	# Completions
