@@ -3,7 +3,7 @@ bash-completion
 direnv					# Allows to have project-specific environment variables and not clutter the "~/.profile" file
 git-flow
 md5sha1sum
-mobile-shell			# Mosh is a replacement for SSH. It's more robust and responsive, especially over Wi-Fi, cellular, and long-distance links.
+mobile-shell				# Mosh is a replacement for SSH. It's more robust and responsive, especially over Wi-Fi, cellular, and long-distance links.
 most					# If less is more than more, most is more than less
 parallel				# Shell tool for executing jobs in parallel using one or more computers
 pigz					# Parallel gzip
@@ -11,6 +11,7 @@ pngcrush
 tree
 watch
 z
+git					# Git 2.2.1
 
 # Java
 maven30					# Maven 3.0.x
@@ -27,8 +28,8 @@ wget
 heroku-toolbelt				# Heroku SDK
 
 # Code search
-ack						# a tool like grep, optimized for programmers
-the_silver_searcher		# A code-searching tool similar to ack, but faster
+ack					# a tool like grep, optimized for programmers
+the_silver_searcher			# A code-searching tool similar to ack, but faster
 
 # Virtualization
 boot2docker
