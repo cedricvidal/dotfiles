@@ -2,7 +2,7 @@ bower
 cordova
 couchapp
 csvtojson
-grunt
+grunt-cli
 gulp
 http-server
 ios-sim
