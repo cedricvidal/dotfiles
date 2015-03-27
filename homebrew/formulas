@@ -36,3 +36,7 @@ the_silver_searcher			# A code-searching tool similar to ack, but faster
 boot2docker
 docker
 fig
+
+# Data science
+jq					# sed for JSON
+
