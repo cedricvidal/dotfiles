@@ -24,6 +24,7 @@ node					# Node.js
 rsync					# rsync 3.1 replaces OSX old rsync 2.6.9
 ssh-copy-id				# install your public key in a remote machine's authorized_keys
 wget
+axel					# FlashGet for command line
 
 # PAAS
 heroku-toolbelt				# Heroku SDK
