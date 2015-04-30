@@ -25,6 +25,7 @@ rsync					# rsync 3.1 replaces OSX old rsync 2.6.9
 ssh-copy-id				# install your public key in a remote machine's authorized_keys
 wget
 axel					# FlashGet for command line
+aria2					# Another FlashGet for command line, better HTTPS support
 
 # PAAS
 heroku-toolbelt				# Heroku SDK
