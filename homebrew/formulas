@@ -42,3 +42,6 @@ fig
 # Data science
 jq					# sed for JSON
 
+# My tap
+pdfbox					# Apache PDFBox - A Java PDF Library
+

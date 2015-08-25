@@ -1,2 +1,3 @@
 homebrew/dupes		# These formulae duplicate software provided by OS X, though may provide more recent or bugfix versions.
 homebrew/completions	# Completions
+cedricvidal/tap		# My tap
