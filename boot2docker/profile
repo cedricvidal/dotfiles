@@ -1,0 +1,6 @@
+# VM disk image size in MB
+DiskSize = 61440
+
+# VM memory size in MB
+Memory = 6144
+

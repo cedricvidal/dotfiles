@@ -12,4 +12,5 @@ fresh freshshell/fresh bin/fresh --bin
 
 fresh direnv/direnvrc --file
 fresh git/gitconfig --file
+fresh boot2docker/profile --file=~/.boot2docker/profile
 
