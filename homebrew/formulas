@@ -12,6 +12,7 @@ tree
 watch
 z
 git					# Git 2.2.1
+flock					# File locks
 
 # Java
 maven30					# Maven 3.0.x
@@ -26,6 +27,7 @@ ssh-copy-id				# install your public key in a remote machine's authorized_keys
 wget
 axel					# FlashGet for command line
 aria2					# Another FlashGet for command line, better HTTPS support
+socat					# netcat on steroids
 
 # PAAS
 heroku-toolbelt				# Heroku SDK
