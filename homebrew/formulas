@@ -20,6 +20,8 @@ maven-completion
 
 # Node.js
 node					# Node.js
+flow					# A static type checker for javascript
+watchman				# A file watching service
 
 # Network
 rsync					# rsync 3.1 replaces OSX old rsync 2.6.9
