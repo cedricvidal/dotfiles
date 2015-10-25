@@ -1,7 +1,7 @@
 # Classic tools
 bash-completion
 direnv					# Allows to have project-specific environment variables and not clutter the "~/.profile" file
-git-flow
+git-flow-avh				# Git flow AVH Edition (with proper describe support)
 md5sha1sum
 mobile-shell				# Mosh is a replacement for SSH. It's more robust and responsive, especially over Wi-Fi, cellular, and long-distance links.
 most					# If less is more than more, most is more than less
