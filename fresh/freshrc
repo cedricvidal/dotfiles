@@ -15,3 +15,6 @@ fresh git/gitconfig --file
 fresh boot2docker/profile --file=~/.boot2docker/profile
 
 fresh bin/idea --bin
+fresh bin/public-ip --bin
+fresh bin/local-ip --bin
+
