@@ -45,6 +45,7 @@ docker-compose
 
 # Data science
 jq					# sed for JSON
+q					# Treat text as a database
 
 # My tap
 pdfbox					# Apache PDFBox - A Java PDF Library
