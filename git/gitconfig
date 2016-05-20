@@ -34,3 +34,6 @@
 	support = support/
 	versiontag =
 
+[pull]
+	ff = only
+
