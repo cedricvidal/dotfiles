@@ -53,3 +53,5 @@ rrdtool
 tesseract
 python
 python3
+qt
+pyqt
