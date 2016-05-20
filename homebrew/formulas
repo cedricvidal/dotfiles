@@ -38,11 +38,6 @@ heroku-toolbelt				# Heroku SDK
 ack					# a tool like grep, optimized for programmers
 the_silver_searcher			# A code-searching tool similar to ack, but faster
 
-# Virtualization
-docker
-docker-machine
-docker-compose
-
 # Data science
 jq					# sed for JSON
 q					# Treat text as a database

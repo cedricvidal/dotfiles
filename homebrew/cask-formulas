@@ -1,6 +1,5 @@
 sublime-text
 vagrant
-virtualbox
 sourcetree
 hipchat
 mou				# Markdown editor
@@ -9,4 +8,6 @@ keka
 dockertoolbox
 
 iterm2
+dropbox
+geekbench
 
