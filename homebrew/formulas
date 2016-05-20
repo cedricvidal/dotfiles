@@ -48,3 +48,4 @@ jgitflow-semver				# JGitFlow SemVer - Provides Semantic Versioning using Gitflo
 
 springboot
 sha2
+sbt
