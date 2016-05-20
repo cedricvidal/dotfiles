@@ -26,3 +26,5 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 
 fi
 
+fresh shell/completions/brew.sh
+
