@@ -47,3 +47,4 @@ pdfbox					# Apache PDFBox - A Java PDF Library
 jgitflow-semver				# JGitFlow SemVer - Provides Semantic Versioning using Gitflow
 
 springboot
+sha2
