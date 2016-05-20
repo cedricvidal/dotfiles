@@ -60,3 +60,4 @@ packer
 p7zip
 openssh
 openssl
+opencv
