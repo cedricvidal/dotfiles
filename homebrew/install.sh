@@ -34,8 +34,10 @@ TO_INSTALL=$(comm -13 /tmp/installed /tmp/toinstall)
 if [ ! -z "${TO_INSTALL}" ]; then
 	echo "Missing brew taps should be installed"
 	update
-	echo "Installing brew taps ${TO_INSTALL}"
-	brew tap ${TO_INSTALL}
+	for TAP in ${TO_INSTALL}; do
+		echo "Installing tap $TAP"
+		brew tap ${TAP}
+	done
 else
 	echo "All brew taps are already installed"
 fi
