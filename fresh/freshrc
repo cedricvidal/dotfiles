@@ -19,3 +19,7 @@ fresh bin/public-ip --bin
 fresh bin/local-ip --bin
 fresh bin/adduser --bin
 
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	fresh prefs/controlplane.plist --file=~/Library/Preferences/com.dustinrue.ControlPlane.plist --filter="plutil -convert binary1 -o - -"
+fi
+
