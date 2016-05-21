@@ -13,6 +13,7 @@ watch
 z
 git					# Git 2.2.1
 flock					# File locks
+bash					# Latest bash
 
 # Java
 mvnvm					# Maven Version Manager
