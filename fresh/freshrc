@@ -18,6 +18,8 @@ fresh homebrew/formulas\* --file=~/.brewinstall/formulas
 fresh homebrew/cask-formulas\* --file=~/.brewinstall/cask-formulas
 fresh homebrew/taps\* --file=~/.brewinstall/taps
 
+fresh node/modules\* --file=~/.nodeinstall/modules
+
 fresh bin/idea --bin
 fresh bin/public-ip --bin
 fresh bin/local-ip --bin

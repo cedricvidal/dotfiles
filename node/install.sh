@@ -1,6 +1,7 @@
 #!/bin/sh
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+#DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR=~/.nodeinstall
 
 command -v npm >/dev/null 2>&1
 if [ "$?" -ne "0" ]; then
