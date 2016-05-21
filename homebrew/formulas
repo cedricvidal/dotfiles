@@ -34,15 +34,11 @@ aria2					# Another FlashGet for command line, better HTTPS support
 socat					# netcat on steroids
 
 # PAAS
-heroku-toolbelt				# Heroku SDK
+heroku					# Heroku SDK
 
 # Code search
 ack					# a tool like grep, optimized for programmers
 the_silver_searcher			# A code-searching tool similar to ack, but faster
-
-# Data science
-jq					# sed for JSON
-q					# Treat text as a database
 
 # My tap
 pdfbox					# Apache PDFBox - A Java PDF Library
@@ -52,23 +48,16 @@ springboot
 sha2
 sbt
 rrdtool
-tesseract
-python
-python3
-qt
-pyqt
 pv
 packer
 p7zip
 openssh
 openssl
-opencv
-octave
 maven31
 lnav
-imagemagick
 htop-osx
 sqlite
 go
 dos2unix
 asciinema
+
