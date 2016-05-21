@@ -14,6 +14,7 @@ z
 git					# Git 2.2.1
 flock					# File locks
 bash					# Latest bash
+tmux					# Terminal multiplexer
 
 # Java
 mvnvm					# Maven Version Manager
