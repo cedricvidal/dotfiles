@@ -29,3 +29,7 @@ fi
 
 fresh shell/completions/brew.sh
 
+#fresh nicknisi/dotfiles tmux/theme.sh --file=~/.tmux.conf
+
+fresh jasoncodes/dotfiles config/tmux.conf --file
+
