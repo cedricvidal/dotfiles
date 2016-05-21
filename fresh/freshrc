@@ -22,7 +22,7 @@ fresh bin/adduser --bin
 if [[ "$OSTYPE" == "darwin"* ]]; then
 
 	# Convert XML plist to binary and link it
-	fresh prefs/controlplane.plist --file=~/Library/Preferences/com.dustinrue.ControlPlane.plist --filter="plutil -convert binary1 -o - -"
+	fresh prefs/com.dustinrue.ControlPlane.plist --file=~/Library/Preferences/com.dustinrue.ControlPlane.plist --filter="plutil -convert binary1 -o - -"
 
 fi
 
