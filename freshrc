@@ -24,6 +24,9 @@ fresh homebrew/taps\* --file=$FRESH_PATH/installers/homebrew/taps
 # Node installer configuration files
 fresh node/modules\* --file=$FRESH_PATH/installers/node/modules
 
+fresh bash-it/aliases\* --file=$FRESH_PATH/installers/bash-it/aliases
+fresh bash-it/plugins\* --file=$FRESH_PATH/installers/bash-it/plugins
+
 fresh bin/\* --bin
 
 if [[ "$OSTYPE" == "darwin"* ]]; then

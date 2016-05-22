@@ -4,7 +4,7 @@
 #
 BASHIT_DIR=~/.bash_it
 
-DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR=$FRESH_PATH/installers/bash-it
 
 if [ ! -f $BASHIT_DIR/bash_it.sh ]; then
   echo "Installing Bash-it"
