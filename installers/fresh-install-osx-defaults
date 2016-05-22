@@ -1,0 +1,3 @@
+$FRESH_PATH/installers/osx/defaults.sh
+killall Dock
+
