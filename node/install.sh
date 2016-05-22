@@ -12,7 +12,9 @@ fi
 # Install Missing modules
 #
 find /usr/local/lib/node_modules -type d -depth 1 | sort | while read path; do basename $path; done > /tmp/installed
-TO_INSTALL=$(comm -13 /tmp/installed $DIR/modules)
+
+cat $DIR/modules | tr -d "\t " | cut -d "#" -f 1 | sort -u > /tmp/toinstall
+TO_INSTALL=$(comm -13 /tmp/installed /tmp/toinstall)
 
 if [ ! -z "${TO_INSTALL}" ]; then
   #echo "Updating Node.js modules before installing new ones"
