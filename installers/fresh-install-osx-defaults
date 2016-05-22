@@ -1,5 +1,5 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	$FRESH_PATH/installers/osx/defaults.sh
+	sh $FRESH_PATH/installers/osx/defaults.sh
+	killall Finder
 	killall Dock
 fi
-
