@@ -17,12 +17,12 @@ fresh config/\* --file
 fresh boot2docker/profile --file=~/.boot2docker/profile
 
 # Homebrew installer configuration files
-fresh homebrew/formulas\* --file=~/.brewinstall/formulas
-fresh homebrew/cask-formulas\* --file=~/.brewinstall/cask-formulas
-fresh homebrew/taps\* --file=~/.brewinstall/taps
+fresh homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
+fresh homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+fresh homebrew/taps\* --file=$FRESH_PATH/installers/homebrew/taps
 
 # Node installer configuration files
-fresh node/modules\* --file=~/.nodeinstall/modules
+fresh node/modules\* --file=$FRESH_PATH/installers/node/modules
 
 fresh bin/\* --bin
 

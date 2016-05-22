@@ -1,7 +1,7 @@
 #!/bin/sh
 
 #DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-DIR=~/.brewinstall
+DIR=$FRESH_PATH/installers/homebrew
 
 if [ ! -d ~/.fresh ]; then
 	echo 'Install fresh first'
