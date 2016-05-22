@@ -39,3 +39,14 @@ fresh shell/completions/brew.sh
 
 fresh jasoncodes/dotfiles config/tmux.conf --file
 
+fresh_after_build() {
+
+	# Add fresh to ~/.bash_profile
+	if ! (cat ~/.bash_profile | grep "source ~/.fresh/build/shell.sh" > /dev/null); then
+	        echo "Adding Fresh shell to ~/.bash_profile"
+	        echo "source ~/.fresh/build/shell.sh" >> ~/.bash_profile
+	fi
+
+	$FRESH_LOCAL/install
+}
+
