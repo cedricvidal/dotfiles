@@ -34,7 +34,6 @@ fresh shell/completions/\*.sh
 fresh shell/\*.sh
 
 #fresh nicknisi/dotfiles tmux/theme.sh --file=~/.tmux.conf
-
 fresh jasoncodes/dotfiles config/tmux.conf --file
 
 fresh_after_build() {
@@ -54,6 +53,7 @@ fresh_after_build() {
 	        echo "source ~/.fresh/build/shell.sh" >> $CONFIG_FILE
 	fi
 
+	# Run all sourced installers
 	$FRESH_LOCAL/install
 }
 
