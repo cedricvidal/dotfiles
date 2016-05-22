@@ -31,8 +31,8 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 	fresh osx/defaults/\* --bin=$FRESH_PATH/installers/osx/defaults.sh
 
 	# Convert XML plist to binary and link it
-	fresh prefs/com.dustinrue.ControlPlane.plist --file=~/Library/Preferences/com.dustinrue.ControlPlane.plist --filter="plutil -convert binary1 -o - -"
-#	fresh prefs/com.googlecode.iterm2.plist --file=~/Library/Preferences/com.googlecode.iterm2.plist --filter="plutil -convert binary1 -o - -"
+	fresh osx/prefs/com.dustinrue.ControlPlane.plist --file=~/Library/Preferences/com.dustinrue.ControlPlane.plist --filter="plutil -convert binary1 -o - -"
+#	fresh osx/prefs/com.googlecode.iterm2.plist --file=~/Library/Preferences/com.googlecode.iterm2.plist --filter="plutil -convert binary1 -o - -"
 
 fi
 
