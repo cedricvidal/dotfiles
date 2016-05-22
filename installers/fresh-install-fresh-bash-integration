@@ -1,0 +1,15 @@
+case $OSTYPE in
+	darwin*)
+		CONFIG_FILE=~/.bash_profile
+		;;
+	*)
+		CONFIG_FILE=~/.bashrc
+		;;
+esac
+
+# Add fresh to ~/.bash_profile
+if ! (cat $CONFIG_FILE | grep "source ~/.fresh/build/shell.sh" > /dev/null); then
+	echo "Adding Fresh shell to $CONFIG_FILE"
+	echo "source ~/.fresh/build/shell.sh" >> $CONFIG_FILE
+fi
+
