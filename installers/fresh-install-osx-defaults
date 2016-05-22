@@ -1,3 +1,5 @@
-$FRESH_PATH/installers/osx/defaults.sh
-killall Dock
+if [[ "$OSTYPE" == "darwin"* ]]; then
+	$FRESH_PATH/installers/osx/defaults.sh
+	killall Dock
+fi
 
