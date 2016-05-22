@@ -34,3 +34,6 @@ defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
 
 # Open Finder on Home
 defaults write com.apple.finder NewWindowTarget PfDo
+
+# Use F1, F2 keys as standard keys and use Fn key to access the function
+defaults write -g com.apple.keyboard.fnState -bool true
