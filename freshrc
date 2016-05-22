@@ -17,9 +17,11 @@ fresh config/\* --file
 fresh boot2docker/profile --file=~/.boot2docker/profile
 
 # Homebrew installer configuration files
-fresh homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
-fresh homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
-fresh homebrew/taps\* --file=$FRESH_PATH/installers/homebrew/taps
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  fresh homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
+  fresh homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+  fresh homebrew/taps\* --file=$FRESH_PATH/installers/homebrew/taps
+fi
 
 # Node installer configuration files
 fresh node/modules\* --file=$FRESH_PATH/installers/node/modules
@@ -30,12 +32,11 @@ fresh bash-it/plugins\* --file=$FRESH_PATH/installers/bash-it/plugins
 fresh bin/\* --bin
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
+  fresh osx/defaults/\* --bin=$FRESH_PATH/installers/osx/defaults.sh
 
-	fresh osx/defaults/\* --bin=$FRESH_PATH/installers/osx/defaults.sh
-
-	# Convert XML plist to binary and link it
-	fresh osx/prefs/com.dustinrue.ControlPlane.plist --file=~/Library/Preferences/com.dustinrue.ControlPlane.plist --filter="plutil -convert binary1 -o - -"
-#	fresh osx/prefs/com.googlecode.iterm2.plist --file=~/Library/Preferences/com.googlecode.iterm2.plist --filter="plutil -convert binary1 -o - -"
+  # Convert XML plist to binary and link it
+  fresh osx/prefs/com.dustinrue.ControlPlane.plist --file=~/Library/Preferences/com.dustinrue.ControlPlane.plist --filter="plutil -convert binary1 -o - -"
+#  fresh osx/prefs/com.googlecode.iterm2.plist --file=~/Library/Preferences/com.googlecode.iterm2.plist --filter="plutil -convert binary1 -o - -"
 
 fi
 
