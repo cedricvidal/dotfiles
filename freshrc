@@ -31,6 +31,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 fi
 
 fresh shell/completions/\*.sh
+fresh shell/\*.sh
 
 #fresh nicknisi/dotfiles tmux/theme.sh --file=~/.tmux.conf
 
