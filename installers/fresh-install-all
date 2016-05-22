@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+#
+# Run all dotfiles installers.
+
+set -e
+
+cd "$(dirname $0)"
+
+RED='\033[0;31m'
+LIGHT_GREEN='\033[1;32m'
+NC='\033[0m' # No Color
+
+# find the installers and run them iteratively
+compgen -c | grep "^fresh-install-" | grep -v $(basename "$0") | sed "s/^fresh-install-//" | while read installer ; do
+#	echo $installer
+	printf "Running ${LIGHT_GREEN}$installer${NC} installer\n"
+	sh -c "fresh-install-${installer}"
+done
+ 

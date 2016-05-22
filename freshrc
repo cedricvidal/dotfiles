@@ -10,6 +10,9 @@
 
 fresh freshshell/fresh bin/fresh --bin
 
+# Link installers for homebrew, node, bash-it, ...
+fresh installers/fresh-install-\* --bin
+
 fresh config/\* --file
 fresh boot2docker/profile --file=~/.boot2docker/profile
 
@@ -53,6 +56,6 @@ fresh_after_build() {
 	fi
 
 	# Run all sourced installers
-	$FRESH_LOCAL/install
+	fresh install-all
 }
 
