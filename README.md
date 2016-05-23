@@ -39,7 +39,7 @@ git commit -m "Initial fresh dotfiles"
 
 Installers are script which manage the installation of specific types of artifacts such as homebrew formulas, node modules or OSX defaults.
 
-You can either enable all of them (it doesn't hurt as it will only install supporting tools such as brew, node.js and bash-it).
+You can either enable [all of them](installers/) (it doesn't hurt as it will only install supporting tools such as brew, node.js and bash-it).
 
 ```
 fresh cedricvidal/dotfiles installers/fresh-install-\* --bin
@@ -47,7 +47,7 @@ fresh cedricvidal/dotfiles installers/fresh-install-\* --bin
 
 NB: For each fresh command, you'll need to hit `y` when asked whether to add the line to your `freshrc` file.
 
-You can also enable only specific installers like this
+You can also enable only [specific installers](installers/) like this
 
 ```
 fresh cedricvidal/dotfiles installers/fresh-install-homebrew --bin
@@ -66,7 +66,7 @@ EOF
 
 **Homebrew formulas**
 
-You can source someone else's homebrew formulas (here me `cedricvidal/dotfiles`), cask formulas or taps with the following commands
+You can source someone else's homebrew formulas ([mine are here](homebrew/) `cedricvidal/dotfiles`), cask formulas or taps with the following commands
 
 ```
 fresh cedricvidal/dotfiles homebrew/formulas --file=$FRESH_PATH/installers/homebrew/formulas
@@ -82,7 +82,7 @@ echo "most # If less is more than more, most is more than less" >> ~/.dotfiles/h
 fresh homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
 ```
 
-NB: The wildcard allows you to split your homebrew formulas into multiple files by category of usage and source them all at once. This is encouraged to allow easier reuse by others.
+NB: The wildcard allows you to split your homebrew formulas into multiple files by category of usage and source them all at once. This is encouraged to allow easier reuse by others. You can have a look at [mine](homebrew/) to see how it can be done.
 
 NB: if you want to share your dotfiles between OSX and non OSX environments, you might want to embed your OSX specific fresh calls into a darwin check like this:
 
