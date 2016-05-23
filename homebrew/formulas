@@ -3,6 +3,7 @@ bash-completion
 direnv					# Allows to have project-specific environment variables and not clutter the "~/.profile" file
 git-flow-avh				# Git flow AVH Edition (with proper describe support)
 md5sha1sum
+sha2
 mobile-shell				# Mosh is a replacement for SSH. It's more robust and responsive, especially over Wi-Fi, cellular, and long-distance links.
 most					# If less is more than more, most is more than less
 parallel				# Shell tool for executing jobs in parallel using one or more computers
@@ -15,49 +16,16 @@ git					# Git 2.2.1
 flock					# File locks
 bash					# Latest bash
 tmux					# Terminal multiplexer
-
-# Java
-mvnvm					# Maven Version Manager
-maven-completion
-
-# Node.js
-node					# Node.js
-flow					# A static type checker for javascript
-watchman				# A file watching service
-
-# Network
-rsync					# rsync 3.1 replaces OSX old rsync 2.6.9
-ssh-copy-id				# install your public key in a remote machine's authorized_keys
-wget					# File download
-axel					# FlashGet for command line
-aria2					# Another FlashGet for command line, better HTTPS support
-socat					# netcat on steroids
-
-# PAAS
-heroku					# Heroku SDK
+dos2unix
+rrdtool
+pv
+p7zip
+openssh
+openssl
+lnav
+htop-osx
+sqlite
 
 # Code search
 ack					# a tool like grep, optimized for programmers
 the_silver_searcher			# A code-searching tool similar to ack, but faster
-
-# My tap
-pdfbox					# Apache PDFBox - A Java PDF Library
-jgitflow-semver				# JGitFlow SemVer - Provides Semantic Versioning using Gitflow
-
-springboot
-sha2
-sbt
-rrdtool
-pv
-packer
-p7zip
-openssh
-openssl
-maven31
-lnav
-htop-osx
-sqlite
-go
-dos2unix
-asciinema
-
