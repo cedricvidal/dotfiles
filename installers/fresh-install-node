@@ -3,6 +3,10 @@
 #DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 DIR=$FRESH_PATH/installers/node
 
+if [ ! -f $DIR/modules ]; then
+	exit 0
+fi
+
 command -v npm >/dev/null 2>&1
 if [ "$?" -ne "0" ]; then
     echo 'Install Node.js: brew install node'
@@ -27,4 +31,3 @@ if [ ! -z "${TO_INSTALL}" ]; then
 else
   echo "All Node.js modules are already installed"
 fi
-
