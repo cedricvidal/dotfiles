@@ -61,18 +61,22 @@ if [ ! "x$QS_GIT" == "x" ]; then
 	qsref=remotes/origin/feature/PMT-87-initial-formulas
 	fresh $(qsrepo common) --ref=$qsref homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
 	fresh $(qsrepo common) --ref=$qsref homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+	fresh $(qsrepo common) --ref=$qsref homebrew/taps\* --file=$FRESH_PATH/installers/homebrew/taps
 
 	qsref=remotes/origin/feature/PMT-88-initial-formulas
 	fresh $(qsrepo lab) --ref=$qsref homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
 	fresh $(qsrepo lab) --ref=$qsref homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+	fresh $(qsrepo lab) --ref=$qsref homebrew/taps\* --file=$FRESH_PATH/installers/homebrew/taps
 
 	qsref=remotes/origin/feature/PMT-89-initial-formulas
 	#fresh $(qsrepo ladrad) --ref=$qsref homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
 	fresh $(qsrepo ladrad) --ref=$qsref homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+	fresh $(qsrepo ladrad) --ref=$qsref homebrew/taps\* --file=$FRESH_PATH/installers/homebrew/taps
 
 	qsref=remotes/origin/feature/PMT-90-initial-formulas
 	fresh $(qsrepo socle) --ref=$qsref homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
 	fresh $(qsrepo socle) --ref=$qsref homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+	fresh $(qsrepo socle) --ref=$qsref homebrew/taps\* --file=$FRESH_PATH/installers/homebrew/taps
 
 fi
 
