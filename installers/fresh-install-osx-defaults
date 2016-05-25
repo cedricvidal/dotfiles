@@ -1,10 +1,9 @@
 if [[ "$OSTYPE" == "darwin"* ]]; then
-	sh $FRESH_PATH/installers/osx/defaults.sh
-
-	for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" \
-		"Dock" "Finder" "Mail" "Messages" \
-		"Safari" "SystemUIServer" "Terminal" \
-		"iCal"; do
+	if [ -f $FRESH_PATH/installers/osx/defaults.sh ]; then
+		sh $FRESH_PATH/installers/osx/defaults.sh
+	fi
+	
+	for app in "Activity Monitor" "Address Book" "Calendar" "Contacts" "cfprefsd" "Dock" "Finder" "SystemUIServer"; do
 		killall "${app}" &> /dev/null
 	done
 
