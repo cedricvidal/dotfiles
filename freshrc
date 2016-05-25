@@ -46,9 +46,35 @@ fresh shell/\*.sh
 #fresh nicknisi/dotfiles tmux/theme.sh --file=~/.tmux.conf
 fresh jasoncodes/dotfiles config/tmux.conf --file
 
+# Quicksign team dotfiles
+
+if [ ! "x$QS_GIT" == "x" ]; then 
+
+	function qsrepo()
+	{
+	    echo "$QS_GIT/dot/qs-dotfiles-team-$1.git"
+	}
+
+	qsref=remotes/origin/feature/PMT-87-initial-formulas
+	fresh $(qsrepo common) --ref=$qsref homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
+	fresh $(qsrepo common) --ref=$qsref homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+
+	qsref=remotes/origin/feature/PMT-88-initial-formulas
+	fresh $(qsrepo lab) --ref=$qsref homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
+	fresh $(qsrepo lab) --ref=$qsref homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+
+	qsref=remotes/origin/feature/PMT-89-initial-formulas
+	#fresh $(qsrepo ladrad) --ref=$qsref homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
+	fresh $(qsrepo ladrad) --ref=$qsref homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+
+	qsref=remotes/origin/feature/PMT-90-initial-formulas
+	fresh $(qsrepo socle) --ref=$qsref homebrew/formulas\* --file=$FRESH_PATH/installers/homebrew/formulas
+	fresh $(qsrepo socle) --ref=$qsref homebrew/cask-formulas\* --file=$FRESH_PATH/installers/homebrew/cask-formulas
+
+fi
+
 fresh_after_build() {
 
 	# Run all sourced installers
 	fresh install-all
 }
-
