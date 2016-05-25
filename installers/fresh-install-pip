@@ -1,0 +1,23 @@
+#!/bin/sh
+
+DIR=$FRESH_PATH/installers/pip
+
+if [ ! -d ~/.fresh ]; then
+	echo 'Install fresh first'
+	exit 1
+fi
+
+command -v pip >/dev/null 2>&1
+if [ "$?" -ne "0" ]; then
+    echo 'Install pip first'
+    exit 1
+fi
+
+# Install Missing Homebrew formulas
+#
+if [ -f $DIR/requirements ]; then
+	pip install --upgrade pip
+
+	cat $DIR/requirements | tr -d "\t " | cut -d "#" -f 1 > /tmp/toinstall
+	pip install -r /tmp/toinstall
+fi
