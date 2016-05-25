@@ -26,6 +26,9 @@ fi
 # Node installer configuration files
 fresh node/modules\* --file=$FRESH_PATH/installers/node/modules
 
+# Pip installer configuration files
+fresh pip/requirements\* --file=$FRESH_PATH/installers/pip/requirements
+
 fresh bash-it/aliases\* --file=$FRESH_PATH/installers/bash-it/aliases
 fresh bash-it/plugins\* --file=$FRESH_PATH/installers/bash-it/plugins
 
