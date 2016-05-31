@@ -80,6 +80,11 @@ if [ ! "x$QS_GIT" == "x" ]; then
 
 fi
 
+# docker-* shell helpers
+for i in docker machine compose; do
+	fresh docker/$i contrib/completion/bash/\*
+done
+
 fresh_after_build() {
 
 	# Run all sourced installers
