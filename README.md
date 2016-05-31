@@ -28,10 +28,17 @@ Step by step setup
 and initialize ~/.dotfiles repository
 
 ```
+# Install fresh
 bash <(curl -sL get.freshshell.com)
+
+# Create your dotfiles folder
 mkdir ~/.dotfiles
+
+# Move the default freshrc configuration file to your dotfiles folder and link back from there
 mv ~/.freshrc ~/.dotfiles/freshrc
 ln -s ~/.dotfiles/freshrc ~/.freshrc
+
+# Version your folder
 cd ~/.dotfiles
 git init
 git add .
