@@ -28,7 +28,10 @@ Step by step setup
 and initialize ~/.dotfiles repository
 
 ```
-FRESH_LOCAL=~/.dotfiles bash <(curl -sL get.freshshell.com)
+bash <(curl -sL get.freshshell.com)
+mkdir ~/.dotfiles
+mv ~/.freshrc ~/.dotfiles/freshrc
+ln -s ~/.dotfiles/freshrc ~/.freshrc
 cd ~/.dotfiles
 git init
 git add .
