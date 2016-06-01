@@ -7,6 +7,10 @@ if [ ! -d ~/.fresh ]; then
 	exit 1
 fi
 
+if [ ! -d $DIR ]; then
+	exit 0
+fi
+
 command -v pip >/dev/null 2>&1
 if [ "$?" -ne "0" ]; then
     echo 'Install pip first'

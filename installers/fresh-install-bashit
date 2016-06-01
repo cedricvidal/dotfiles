@@ -6,6 +6,10 @@ BASHIT_DIR=~/.bash_it
 
 DIR=$FRESH_PATH/installers/bash-it
 
+if [ ! -d $DIR ]; then
+  exit 0
+fi
+
 if [ ! -f $BASHIT_DIR/bash_it.sh ]; then
   echo "Installing Bash-it"
   git clone --depth=1 https://github.com/Bash-it/bash-it.git $BASHIT_DIR
