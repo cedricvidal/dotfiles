@@ -33,12 +33,6 @@ function update {
 	updated="done"
 }
 
-if [[ $(brew tap) != *cask* ]]; then
-	echo "Detected missing brew cask"
-	update
-	brew install caskroom/cask/brew-cask
-fi
-
 # Install Missing Taps
 #
 if [ -f $DIR/taps ]; then
