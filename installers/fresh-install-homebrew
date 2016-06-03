@@ -37,15 +37,16 @@ function update {
 #
 if [ -f $DIR/taps ]; then
 	brew tap > /tmp/installed
-	cat $DIR/taps | tr -d "\t " | cut -d "#" -f 1 | sort -u > /tmp/toinstall
+	cat $DIR/taps | tr -s "\t" " " | cut -d " " -f 1 | sort -u > /tmp/toinstall
 	TO_INSTALL=$(comm -13 /tmp/installed /tmp/toinstall)
 
 	if [ ! -z "${TO_INSTALL}" ]; then
 		echo "Missing brew taps should be installed"
 		update
 		for TAP in ${TO_INSTALL}; do
-			echo "Installing tap $TAP"
-			brew tap ${TAP}
+			FULLTAP=$(cat $DIR/taps | grep $TAP | tr -s "\t" " " | cut -d "#" -f 1)
+			echo "Installing tap $FULLTAP"
+			brew tap ${FULLTAP}
 		done
 	else
 		echo "All brew taps are already installed"
