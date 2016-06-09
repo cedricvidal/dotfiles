@@ -51,7 +51,7 @@ fresh jasoncodes/dotfiles config/tmux.conf --file
 
 # Quicksign team dotfiles
 
-if [ ! "x$QS_GIT" == "x" ]; then 
+if [[ "${QS_GIT:+isset}" == "isset" ]]; then
 
 	# Change teams you belong to here
 	teams=$(cat ~/.dotfiles/teams)
