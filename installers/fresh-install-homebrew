@@ -18,8 +18,8 @@ fi
 
 command -v brew >/dev/null 2>&1
 if [ "$?" -ne "0" ]; then
-    echo 'Install Homebrew: http://brew.sh/'
-    exit 1
+    echo "Homebrew missing so installing it"
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 updated="no"
