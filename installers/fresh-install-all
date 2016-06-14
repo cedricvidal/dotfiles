@@ -17,7 +17,9 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Load fresh shell in order for environment variables sourced by fresh to be available during installation phase
-source $FRESH_PATH/build/shell.sh || true
+set +e
+source $FRESH_PATH/build/shell.sh
+set -e
 
 # find the installers and run them iteratively
 compgen -c | grep "^fresh-install-" | grep -v $(basename "$0") | sed "s/^fresh-install-//" | while read installer ; do
