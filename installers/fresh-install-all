@@ -11,6 +11,7 @@ LIGHT_GREEN='\033[1;32m'
 NC='\033[0m' # No Color
 
 # Ask for the administrator password upfront
+echo -e "You may be asked to enter your ${RED}root${NC} password"
 sudo -v
 
 # Keep-alive: update existing `sudo` time stamp until `.osx` has finished
