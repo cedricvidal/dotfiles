@@ -46,6 +46,8 @@ fi
 fresh shell/completions/\*.sh
 fresh shell/\*.sh
 
+fresh torrc --file=/usr/local/etc/tor/torrc
+
 #fresh nicknisi/dotfiles tmux/theme.sh --file=~/.tmux.conf
 fresh jasoncodes/dotfiles config/tmux.conf --file
 
