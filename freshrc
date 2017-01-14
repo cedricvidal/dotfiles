@@ -29,6 +29,9 @@ fresh node/modules\* --file=$FRESH_PATH/installers/node/modules
 # Pip installer configuration files
 fresh pip/requirements\* --file=$FRESH_PATH/installers/pip/requirements
 
+# Ruby installer configuration files
+fresh ruby/gems\* --file=$FRESH_PATH/installers/ruby/gems
+
 fresh bash-it/aliases\* --file=$FRESH_PATH/installers/bash-it/aliases
 fresh bash-it/plugins\* --file=$FRESH_PATH/installers/bash-it/plugins
 

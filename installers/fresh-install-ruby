@@ -1,0 +1,30 @@
+#!/bin/sh
+
+#DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+DIR=$FRESH_PATH/installers/ruby
+
+if [ ! -d $DIR ]; then
+	exit 0
+fi
+
+command -v gem >/dev/null 2>&1
+if [ "$?" -ne "0" ]; then
+    echo 'Install ruby'
+    exit 1
+fi
+
+# Install Missing gems
+#
+gem list | cut -d " " -f 1 | sort > /tmp/installed
+
+cat $DIR/gems | tr -d "\t " | cut -d "#" -f 1 | sort -u > /tmp/toinstall
+TO_INSTALL=$(comm -13 /tmp/installed /tmp/toinstall)
+
+if [ ! -z "${TO_INSTALL}" ]; then
+  echo $TO_INSTALL | while read gem; do
+    echo "Installing Ruby gem $gem"
+    sudo gem install ${gem}
+  done
+else
+  echo "All Ruby gems are already installed"
+fi
