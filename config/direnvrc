@@ -21,12 +21,21 @@ function sdk() {
 layout_anaconda3() {
   local ANACONDA_HOME="$HOME/anaconda3"
   PATH_add "$ANACONDA_HOME/bin"
-  source activate $1
+
+  echo
+  echo "# Please activate Anaconda 3 environment"
+  echo "source activate $1"
+  echo
 }
 
 layout_anaconda2() {
   local ANACONDA_HOME="$HOME/anaconda2"
   PATH_add "$ANACONDA_HOME/bin"
-  source activate $1
+
+  echo
+  echo "# Please activate Anaconda 2 environment"
+  echo "source activate $1"
+  echo
+
 }
 
