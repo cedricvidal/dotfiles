@@ -18,3 +18,15 @@ function sdk() {
   [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh" && sdk $@
 }
 
+layout_anaconda3() {
+  local ANACONDA_HOME="$HOME/anaconda3"
+  PATH_add "$ANACONDA_HOME/bin"
+  source activate $1
+}
+
+layout_anaconda2() {
+  local ANACONDA_HOME="$HOME/anaconda2"
+  PATH_add "$ANACONDA_HOME/bin"
+  source activate $1
+}
+
