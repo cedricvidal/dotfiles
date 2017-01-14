@@ -1,8 +1,8 @@
 {
 	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
-  	"theme": "Oceanic Next.sublime-theme",
 	"ignored_packages":
 	[
 		"Vintage"
-	]
+	],
+	"theme": "Oceanic Next.sublime-theme"
 }
