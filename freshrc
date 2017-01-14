@@ -55,6 +55,9 @@ fresh jasoncodes/dotfiles config/tmux.conf --file
 
 if [[ "${QS_GIT:+isset}" == "isset" ]]; then
 
+	fresh $QS_GIT/~cvidal/dotfiles.git sshconfig --file=~/.ssh/config
+	fresh $QS_GIT/~cvidal/dotfiles.git bin/\* --bin
+
 	# Change teams you belong to here
 	teams=$(cat ~/.dotfiles/teams)
 	echo "Freshing teams: $(echo $teams)"
