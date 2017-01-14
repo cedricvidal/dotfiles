@@ -30,6 +30,7 @@ and initialize ~/.dotfiles repository
 ```
 # Install fresh
 bash <(curl -sL get.freshshell.com)
+echo "source ~/.fresh/build/shell.sh" >> ~/.bash_profile
 
 # Create your dotfiles folder
 mkdir ~/.dotfiles
