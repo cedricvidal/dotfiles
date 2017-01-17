@@ -1,6 +1,7 @@
 # Classic tools
 bash-completion
 direnv					# Allows to have project-specific environment variables and not clutter the "~/.profile" file
+envchain				# set environment variables with OS X keychain or D-Bus secret service
 git-flow-avh				# Git flow AVH Edition (with proper describe support)
 md5sha1sum
 sha2
