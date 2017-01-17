@@ -26,6 +26,7 @@ openssl
 lnav
 htop-osx
 sqlite
+rename					# Mass file renaming
 
 # Code search
 ack					# a tool like grep, optimized for programmers
