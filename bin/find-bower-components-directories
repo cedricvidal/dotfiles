@@ -1,0 +1,15 @@
+function findmodules {
+	mdfind -name bower_components -onlyin /Users/ | while read i; do
+		name=$(basename $i)
+		dir=$(dirname "${i}")
+		json=$dir/package.json
+		if (echo $i | grep -v "\/bower_components\/" | grep "\/bower_components\/\?$") && [ -d $i ] && [ -f $json ]; then
+			echo $i
+		else
+			(>&2 echo "$i")
+		fi
+	done
+}
+
+findmodules | uniq
+

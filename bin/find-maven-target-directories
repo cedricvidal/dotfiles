@@ -1,0 +1,23 @@
+SEARCH_FILENAME=pom.xml
+SEARCH_DIRNAME=target
+function findmodules {
+#	total_size=0
+	mdfind -name $SEARCH_FILENAME -onlyin /Users/ | while read i; do
+		name=$(basename "${i}")
+		basedir=$(dirname "${i}")
+		filepath="$basedir/$SEARCH_FILENAME"
+		workdirpath="$basedir/$SEARCH_DIRNAME"
+		if (echo "$basedir" | grep -v "\/$SEARCH_DIRNAME\/" > /dev/null) && [ -d "$workdirpath" ] && [ -f "$filepath" ]; then
+			echo $workdirpath
+#			size=$(du -sk "$workdirpath" | cut -f1)
+#			echo $size
+#			(( total_size=$total_size+$size ))
+#		else
+#			(>&2 echo "$i")
+		fi
+	done
+#	(>&2 echo "$total_size")
+}
+
+findmodules | uniq
+
