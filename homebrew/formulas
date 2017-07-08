@@ -12,7 +12,7 @@ pigz					# Parallel gzip
 pngcrush
 tree
 watch
-z
+fasd
 git					# Git 2.2.1
 flock					# File locks
 bash					# Latest bash
