@@ -1,6 +1,10 @@
 [user]
 	name = Cédric Vidal
 	email = cedric@vidal.biz
+
+[includeIf "gitdir:~/Documents/Quicksign/"]
+	path = .gitconfig-quicksign
+
 [core]
 	excludesfile = ~/.gitignore_global
 	ui = true
