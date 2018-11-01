@@ -126,7 +126,7 @@ if [[ "${QS_GIT:+isset}" == "isset" ]]; then
 fi
 
 # docker-* shell helpers
-for i in docker machine compose; do
+for i in machine compose; do
 	fresh docker/$i contrib/completion/bash/\*
 done
 
