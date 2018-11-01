@@ -1,8 +1,11 @@
 {
 	"color_scheme": "Packages/Oceanic Next Color Scheme/Oceanic Next.tmTheme",
+	"font_size": 12,
 	"ignored_packages":
 	[
+		"Ethereum",
 		"Vintage"
 	],
+	"show_encoding": true,
 	"theme": "Oceanic Next.sublime-theme"
 }
