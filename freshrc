@@ -130,8 +130,10 @@ for i in machine compose; do
 	fresh docker/$i contrib/completion/bash/\*
 done
 
-fresh_after_build() {
+#fresh_after_build() {
 
 	# Run all sourced installers
-	fresh install-all
-}
+#	fresh install-all
+#}
+
+echo "Run fresh install-all to run all installers"
