@@ -1,3 +1,6 @@
 [user]
 	name = Cédric Vidal
 	email = cedric.vidal@quicksign.com
+
+[url "ssh://git@extranet.quicksign.fr:7999/"]
+    insteadOf = https://quicksign.fr/
