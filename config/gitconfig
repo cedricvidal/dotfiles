@@ -45,3 +45,6 @@
 
 [url "ssh://git@extranet.quicksign.fr:7999/"]
 	insteadOf = https://quicksign.fr/
+
+[url "git@github.com:"]
+	insteadOf = https://github.com/
