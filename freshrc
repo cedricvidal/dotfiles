@@ -15,6 +15,7 @@ fresh installers/fresh-install-\* --bin
 
 fresh config/\* --file
 fresh boot2docker/profile --file=~/.boot2docker/profile
+fresh sshconfig --file=~/.ssh/config
 
 # Homebrew installer configuration files
 if [[ "$OSTYPE" == "darwin"* ]]; then

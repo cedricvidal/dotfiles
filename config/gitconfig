@@ -1,3 +1,5 @@
+# personal github dotfiles
+
 [user]
 	name = Cédric Vidal
 	email = cedric@vidal.biz
@@ -41,3 +43,5 @@
 [pull]
 	ff = only
 
+[url "ssh://git@extranet.quicksign.fr:7999/"]
+	insteadOf = https://quicksign.fr/
