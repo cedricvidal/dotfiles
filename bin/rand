@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+while getopts n:f:h option 
+do 
+ case "${option}" 
+ in 
+ n) REPEAT=${OPTARG};; 
+ f) FILE=${OPTARG};; 
+ h) echo "usage: rand [-n repeat] [-f file]"; exit;; 
+ esac 
+done 
+
+REPEAT=${REPEAT:-1}
+FILE=${FILE:--}
+cat $FILE | {
+	readarray -t WORDS;
+	COUNT=${#WORDS[@]};
+	for ((n=0;n<REPEAT;n++))
+	do
+		RND=$(( RANDOM % COUNT  ));
+		echo "${WORDS[RND]}";
+	done
+}
+
