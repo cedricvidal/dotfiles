@@ -4,9 +4,8 @@ q					# Treat text as a database
 tesseract
 python
 python3
-qt
-pyqt
-opencv
+#qt
+#pyqt
+#opencv
 octave
 imagemagick
-
