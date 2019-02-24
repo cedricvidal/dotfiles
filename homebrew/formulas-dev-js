@@ -1,3 +1,4 @@
 node					# Node.js
 flow					# A static type checker for javascript
 watchman				# A file watching service
+nvm
