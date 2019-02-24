@@ -33,6 +33,9 @@ fresh pip/requirements\* --file=$FRESH_PATH/installers/pip/requirements
 fresh bash-it/aliases\* --file=$FRESH_PATH/installers/bash-it/aliases
 fresh bash-it/plugins\* --file=$FRESH_PATH/installers/bash-it/plugins
 
+fresh fish/config.fish --file=~/.config/fish/config.fish
+fresh fish/functions --file=~/.config/fish/functions/
+
 fresh bin/\* --bin
 
 if [[ "$OSTYPE" == "darwin"* ]]; then

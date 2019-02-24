@@ -33,3 +33,6 @@ ack					# a tool like grep, optimized for programmers
 the_silver_searcher			# A code-searching tool similar to ack, but faster
 pstree
 mas # A simple command line interface for the Mac App Store
+
+# Shells
+fish
