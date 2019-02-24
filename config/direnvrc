@@ -1,3 +1,5 @@
+# personal github dotfiles
+
 function setjdk() {  
   if [ $# -ne 0 ]; then  
    removeFromPath '/System/Library/Frameworks/JavaVM.framework/Home/bin'  
