@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+cat ~/Library/Preferences/com.dustinrue.ControlPlane.plist | plutil -convert xml1 -o osx/prefs/com.dustinrue.ControlPlane.plist -

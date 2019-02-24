@@ -276,39 +276,11 @@
 			<key>when</key>
 			<string>Arrival</string>
 		</dict>
-		<dict>
-			<key>context</key>
-			<string>FF7801D7-B353-441B-AB05-C964B520398E</string>
-			<key>delay</key>
-			<real>10</real>
-			<key>description</key>
-			<string>Slack</string>
-			<key>enabled</key>
-			<true/>
-			<key>parameter</key>
-			<string>Slack</string>
-			<key>type</key>
-			<string>QuitApplication</string>
-			<key>when</key>
-			<string>Arrival</string>
-		</dict>
-		<dict>
-			<key>context</key>
-			<string>CA43EA83-1E85-4D9E-9FAF-A6AC9BAA3912</string>
-			<key>delay</key>
-			<real>10</real>
-			<key>description</key>
-			<string>Slack</string>
-			<key>enabled</key>
-			<true/>
-			<key>parameter</key>
-			<string>/Applications/Slack.app</string>
-			<key>type</key>
-			<string>OpenAndHide</string>
-			<key>when</key>
-			<string>Arrival</string>
-		</dict>
 	</array>
+	<key>BITApplicationDidEnterBackgroundTime</key>
+	<real>1551017536.624639</real>
+	<key>BITApplicationWasLaunched</key>
+	<true/>
 	<key>Contexts</key>
 	<array>
 		<dict>
@@ -402,6 +374,11 @@
 	<string>/Applications</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{802, 708}</string>
+	<key>NSSplitView Subview Frames NSColorPanelSplitView</key>
+	<array>
+		<string>0.000000, 0.000000, 224.000000, 258.000000, NO, NO</string>
+		<string>0.000000, 259.000000, 224.000000, 48.000000, NO, NO</string>
+	</array>
 	<key>NSTableView Columns Preferences/Actions</key>
 	<array>
 		<data>
@@ -606,7 +583,7 @@
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-20T10:32:11Z</date>
+	<date>2019-02-24T10:27:14Z</date>
 	<key>SUSkippedVersion</key>
 	<string>77</string>
 	<key>UseDefaultContext</key>
